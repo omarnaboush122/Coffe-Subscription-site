@@ -36,13 +36,13 @@ const OurCollection = () => {
     <ItemOfCollections key={item.id} {...item} />
   ));
   return (
-    <section className="relative my-[120px]">
-      <div className="collection w-full flex justify-center items-center px-11 md:absolute md:-top-16">
-        <h1 className="text-4xl font-Fraunces font-black text-grey opacity-20 md:text-8xl">
+    <section className="relative my-[120px] lg:my-60">
+      <div className="collection w-full flex justify-center items-center px-11 md:absolute md:-top-16 lg:-top-20">
+        <h1 className="text-4xl font-Fraunces font-black text-grey opacity-20 md:text-8xl lg:text-9xl">
           our collection
         </h1>
       </div>
-      <div className="grid grid-cols-1 gap-12 relative max-w-[300px] mx-auto text-center mt-10 md:max-w-[600px] md:text-left">
+      <div className="grid grid-cols-1 gap-12 relative max-w-[300px] mx-auto text-center mt-10 md:max-w-[600px] md:text-left lg:grid-cols-4 lg:max-w-[1000px] lg:text-center lg:gap-4">
         {collectionsElements}
       </div>
     </section>
