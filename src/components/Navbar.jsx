@@ -65,11 +65,11 @@ const Navbar = () => {
           </ul>
         </div>
       ) : null}
-      <div className="hidden md:flex justify-between items-center w-full py-11 px-10">
+      <div className="hidden md:flex justify-between items-center w-full py-11 px-10 lg:px-20">
         <div>
           <img src={Logo} alt="logo" />
         </div>
-        <ul className="flex items-center mt-3 gap-8">
+        <ul className="flex items-center mt-4 gap-8">
           <li>
             <Link
               to="/"
