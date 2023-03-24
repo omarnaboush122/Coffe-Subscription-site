@@ -69,7 +69,7 @@ const Navbar = () => {
         <div>
           <img src={Logo} alt="logo" />
         </div>
-        <ul className="flex items-center mt-4 gap-8">
+        <ul className="flex items-center mt-3 gap-8">
           <li>
             <Link
               to="/"
