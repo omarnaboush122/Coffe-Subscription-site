@@ -36,12 +36,13 @@ const Navbar = () => {
         )}
       </div>
       {isNavVisible ? (
-        <div className="mt-10">
+        <div className="mt-10 md:hidden">
           <ul className="flex flex-col justify-center items-center gap-8 py-10">
             <li>
               <Link
                 to="/"
-                className="text-dark-grey-blue font-Fraunces text-2xl font-black capitalize"
+                className="text-dark-grey-blue font-Fraunces text-2xl font-black capitalize hover:text-dark-cyan transition-colors duration-300"
+                onClick={closeNavbar}
               >
                 home
               </Link>
@@ -49,7 +50,8 @@ const Navbar = () => {
             <li>
               <Link
                 to="/about"
-                className="text-dark-grey-blue font-Fraunces text-2xl font-black capitalize"
+                className="text-dark-grey-blue font-Fraunces text-2xl font-black capitalize hover:text-dark-cyan transition-colors duration-300"
+                onClick={closeNavbar}
               >
                 about us
               </Link>
@@ -57,7 +59,8 @@ const Navbar = () => {
             <li>
               <Link
                 to="/plan"
-                className="text-dark-grey-blue font-Fraunces text-2xl font-black capitalize"
+                className="text-dark-grey-blue font-Fraunces text-2xl font-black capitalize hover:text-dark-cyan transition-colors duration-300"
+                onClick={closeNavbar}
               >
                 create your plan
               </Link>
