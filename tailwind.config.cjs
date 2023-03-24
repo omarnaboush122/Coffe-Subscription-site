@@ -7,7 +7,8 @@ module.exports = {
       "dark-grey-blue": "#333D4B",
       "pale-orange": "#FDD6BA",
       "light-cream": "#FEFCF7",
-      "grey": "#83888F"
+      "grey": "#83888F",
+      "blue" : "#66D2CF"
     },
     fontFamily: {
       barlow: ['Barlow', 'sans-serif'],

@@ -19,3 +19,9 @@ body {
     background-image: url("./assets/home/tablet/image-hero-coffeepress.jpg");
   }
 }
+
+@media (min-width: 1024px) {
+  .header {
+    background-image: url("./assets/home/desktop/image-hero-coffeepress.jpg");
+  }
+}
