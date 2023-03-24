@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="header w-[88vw] h-[500px] mx-auto my-3 rounded-md">
-      <div className="flex flex-col items-center justify-center text-center w-full h-full text-light-cream px-6">
-        <h1 className="text-[40px] leading-10 font-Fraunces font-black">
+      <div className="flex flex-col items-center justify-center text-center w-full h-full max-w-[400px] mx-auto text-light-cream px-6 md:text-left md:items-start md:pl-14 md:m-0 md:max-w-[480px]">
+        <h1 className="text-[40px] leading-10 font-Fraunces font-black md:text-5xl">
           Great coffee made simple.
         </h1>
         <p className="mt-6 mb-9 opacity-80">
