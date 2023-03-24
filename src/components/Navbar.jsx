@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full">
-      <div className="w-full px-6 py-8 flex justify-between items-center">
+      <div className="w-full px-6 py-8 flex justify-between items-center md:hidden">
         <img src={Logo} alt="logo" className="w-40" />
         {isNavVisible ? (
           <img
@@ -65,6 +65,37 @@ const Navbar = () => {
           </ul>
         </div>
       ) : null}
+      <div className="hidden md:flex justify-between items-center w-full py-11 px-10">
+        <div>
+          <img src={Logo} alt="logo" />
+        </div>
+        <ul className="flex items-center mt-3 gap-8">
+          <li>
+            <Link
+              to="/"
+              className="text-grey text-sm font-bold uppercase tracking-[0.9px] hover:text-dark-grey-blue transition-colors duration-300"
+            >
+              home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              className="text-grey text-sm font-bold uppercase tracking-[0.9px] hover:text-dark-grey-blue transition-colors duration-300"
+            >
+              about us
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/plan"
+              className="text-grey text-sm font-bold uppercase tracking-[0.9px] hover:text-dark-grey-blue transition-colors duration-300"
+            >
+              create your plan
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };
