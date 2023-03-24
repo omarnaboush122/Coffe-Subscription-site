@@ -25,3 +25,11 @@ body {
     background-image: url("./assets/home/desktop/image-hero-coffeepress.jpg");
   }
 }
+
+.collection {
+  background: linear-gradient(
+    180deg,
+    rgba(254, 252, 247, 0.0001) 0%,
+    #fefcf7 100%
+  );
+}
