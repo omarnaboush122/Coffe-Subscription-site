@@ -8,7 +8,8 @@ module.exports = {
       "pale-orange": "#FDD6BA",
       "light-cream": "#FEFCF7",
       "grey": "#83888F",
-      "blue" : "#66D2CF"
+      "blue" : "#66D2CF",
+      "black": "#2C343E"
     },
     fontFamily: {
       barlow: ['Barlow', 'sans-serif'],
