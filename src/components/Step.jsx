@@ -1,6 +1,6 @@
 const Step = ({ number, title, desc }) => {
   return (
-    <article className="flex flex-col justify-center items-center text-center gap-6">
+    <article className="max-w-[400px] mx-auto flex flex-col justify-center items-center text-center gap-6">
       <span className="text-pale-orange text-7xl font-Fraunces font-black">
         {number}
       </span>
