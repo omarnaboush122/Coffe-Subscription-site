@@ -35,9 +35,9 @@ const Footer = () => {
           </li>
         </ul>
         <div className="flex items-center gap-6 text-light-cream text-2xl">
-          <i class="fa-brands fa-facebook cursor-pointer hover:text-pale-orange transition-colors duration-300"></i>
-          <i class="fa-brands fa-twitter cursor-pointer hover:text-pale-orange transition-colors duration-300"></i>
-          <i class="fa-brands fa-instagram cursor-pointer hover:text-pale-orange transition-colors duration-300"></i>
+          <i className="fa-brands fa-facebook cursor-pointer hover:text-pale-orange transition-colors duration-300"></i>
+          <i className="fa-brands fa-twitter cursor-pointer hover:text-pale-orange transition-colors duration-300"></i>
+          <i className="fa-brands fa-instagram cursor-pointer hover:text-pale-orange transition-colors duration-300"></i>
         </div>
       </div>
     </footer>
