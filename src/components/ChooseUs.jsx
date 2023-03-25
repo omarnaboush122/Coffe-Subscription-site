@@ -30,9 +30,9 @@ const ChooseUs = () => {
   ));
 
   return (
-    <section className="relative bg-black w-[88vw] h-[900px] my-[120px] mx-auto rounded-lg">
+    <section className="relative bg-black w-[88vw] h-[900px] my-[120px] mx-auto rounded-lg sm:h-[600px]">
       <div className="pt-14 px-6">
-        <div className="text-center mb-16">
+        <div className="max-w-[540px] mx-auto text-center mb-16">
           <h2 className="text-light-cream text-3xl font-Fraunces font-black mb-6">
             Why choose us?
           </h2>
@@ -42,7 +42,7 @@ const ChooseUs = () => {
             coffee growers to give you a more experience on every level.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-6">{servicesElements}</div>
+        <div className="grid grid-cols-1 gap-6 sm:px-14">{servicesElements}</div>
       </div>
     </section>
   );
