@@ -8,10 +8,14 @@ body {
   font-family: "Barlow", "sans-serif";
 }
 
-.header {
-  background-image: url("./assets/home/mobile/image-hero-coffeepress.jpg");
+.header,
+.about {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header {
+  background-image: url("./assets/home/mobile/image-hero-coffeepress.jpg");
 }
 
 @media (min-width: 768px) {
@@ -32,4 +36,20 @@ body {
     rgba(254, 252, 247, 0.0001) 0%,
     #fefcf7 100%
   );
+}
+
+.about {
+  background-image: url("./assets/about/mobile/image-hero-whitecup.jpg");
+}
+
+@media (min-width: 768px) {
+  .about {
+    background-image: url("./assets/about/tablet/image-hero-whitecup.jpg");
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    background-image: url("./assets/about/desktop/image-hero-whitecup.jpg");
+  }
 }
