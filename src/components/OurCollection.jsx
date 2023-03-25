@@ -35,6 +35,7 @@ const OurCollection = () => {
   const collectionsElements = collections.map((item) => (
     <ItemOfCollections key={item.id} {...item} />
   ));
+
   return (
     <section className="relative my-[120px] lg:my-60">
       <div className="collection w-full flex justify-center items-center px-11 md:absolute md:-top-16 lg:-top-20">
