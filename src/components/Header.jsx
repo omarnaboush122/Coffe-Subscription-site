@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="header w-[88vw] h-[500px] mx-auto my-3 rounded-md lg:h-[600px]">
+    <header className="header h-[500px] mx-6 my-3 rounded-md md:mx-10 lg:h-[600px] lg:mx-20">
       <div className="flex flex-col items-center justify-center text-center w-full h-full max-w-[400px] mx-auto text-light-cream px-6 md:text-left md:items-start md:pl-14 md:m-0 md:max-w-[480px] lg:pl-20 lg:max-w-2xl">
         <h1 className="text-[40px] leading-10 font-Fraunces font-black md:text-5xl lg:text-7xl">
           Great coffee made simple.

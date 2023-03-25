@@ -30,9 +30,9 @@ const ChooseUs = () => {
   ));
 
   return (
-    <section className="relative bg-black w-[88vw] h-[900px] my-[120px] mx-auto rounded-lg md:h-[600px]">
+    <section className="relative bg-black h-[900px] my-[120px] mx-6 rounded-lg md:h-[600px] md:mx-10 lg:mx-20">
       <div className="pt-14 px-6">
-        <div className="max-w-[540px] mx-auto text-center mb-16 lg:mb-20">
+        <div className="max-w-[540px] mx-auto text-center mb-16 lg:mb-32">
           <h2 className="text-light-cream text-3xl font-Fraunces font-black mb-6">
             Why choose us?
           </h2>
