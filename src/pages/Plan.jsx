@@ -1,6 +1,7 @@
 import HowToDrink from "../components/HowToDrink";
 import PlanHeader from "../components/PlanHeader";
 import Steps from "../components/Steps";
+import TypesOfCoffee from "../components/TypesOfCoffee";
 
 const Plan = () => {
   return (
@@ -9,6 +10,7 @@ const Plan = () => {
       <main>
         <Steps />
         <HowToDrink />
+        <TypesOfCoffee />
       </main>
     </>
   );
