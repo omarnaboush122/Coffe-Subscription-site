@@ -2,7 +2,7 @@ import PlanStep from "./PlanStep";
 
 const Steps = () => {
   return (
-    <section className="bg-black mx-6 mt-14 rounded-md md:mx-10 lg:mx-20">
+    <section className="bg-black mt-14 rounded-md lg:mx-20">
       <div className="hidden md:block relative top-20 left-14 w-[70%] h-[2px] bg-pale-orange my-14">
         <span className="absolute -top-[15px] left-0 w-8 h-8 bg-light-cream rounded-full border-2 border-solid border-dark-cyan"></span>
         <span className="absolute -top-[15px] left-[50%] w-8 h-8 bg-light-cream rounded-full border-2 border-solid border-dark-cyan"></span>
