@@ -1,10 +1,6 @@
-import Deliver from "../components/Deliver";
-import GrindThem from "../components/GrindThem";
-import HowDoyouDrink from "../components/HowDoyouDrink";
-import HowMuch from "../components/HowMuch";
 import PlanHeader from "../components/PlanHeader";
+import Questions from "../components/Questions";
 import Steps from "../components/Steps";
-import WhatType from "../components/WhatType";
 
 const Plan = () => {
   return (
@@ -12,11 +8,7 @@ const Plan = () => {
       <PlanHeader />
       <main>
         <Steps />
-        <HowDoyouDrink />
-        <WhatType />
-        <HowMuch />
-        <GrindThem />
-        <Deliver />
+        <Questions />
       </main>
     </>
   );
