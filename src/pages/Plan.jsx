@@ -1,3 +1,4 @@
+import HowToDrink from "../components/HowToDrink";
 import PlanHeader from "../components/PlanHeader";
 import Steps from "../components/Steps";
 
@@ -5,7 +6,10 @@ const Plan = () => {
   return (
     <>
       <PlanHeader />
-      <Steps />
+      <main>
+        <Steps />
+        <HowToDrink />
+      </main>
     </>
   );
 };
