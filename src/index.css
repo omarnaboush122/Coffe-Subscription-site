@@ -9,7 +9,8 @@ body {
 }
 
 .header,
-.about {
+.about,
+.plan {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -51,5 +52,21 @@ body {
 @media (min-width: 1024px) {
   .about {
     background-image: url("./assets/about/desktop/image-hero-whitecup.jpg");
+  }
+}
+
+.plan {
+  background-image: url("./assets//plan/mobile/image-hero-blackcup.jpg");
+}
+
+@media (min-width: 768px) {
+  .plan {
+    background-image: url("./assets/plan/tablet/image-hero-blackcup.jpg");
+  }
+}
+
+@media (min-width: 1024px) {
+  .plan {
+    background-image: url("./assets/plan/desktop/image-hero-blackcup.jpg");
   }
 }
