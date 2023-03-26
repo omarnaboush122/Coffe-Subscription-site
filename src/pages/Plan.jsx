@@ -1,11 +1,13 @@
 import PlanHeader from "../components/PlanHeader";
+import Steps from "../components/Steps";
 
 const Plan = () => {
   return (
     <>
-      <PlanHeader/>
+      <PlanHeader />
+      <Steps />
     </>
   );
-}
+};
 
 export default Plan;
