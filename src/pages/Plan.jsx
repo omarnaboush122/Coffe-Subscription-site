@@ -1,7 +1,6 @@
-import HowToDrink from "../components/HowToDrink";
+import CoffeeQuestionsAndAnswers from "../components/CoffeeQuestionsAndAnswers";
 import PlanHeader from "../components/PlanHeader";
 import Steps from "../components/Steps";
-import TypesOfCoffee from "../components/TypesOfCoffee";
 
 const Plan = () => {
   return (
@@ -9,8 +8,7 @@ const Plan = () => {
       <PlanHeader />
       <main>
         <Steps />
-        <HowToDrink />
-        <TypesOfCoffee />
+        <CoffeeQuestionsAndAnswers />
       </main>
     </>
   );
