@@ -1,0 +1,28 @@
+import CoffeeCup from "../assets/about/mobile/image-quality.jpg";
+
+const Quality = () => {
+  return (
+    <section className="relative my-36 mx-6 md:mx-10 md:mt-80 lg:mx-20">
+      <div className="bg-black container mx-auto pt-36 pb-16 px-6 rounded-md md:px-16 md:pt-44">
+        <article className="absolute w-[80%] h-40 -top-[10%] left-[10%] md:h-80 md:-top-[50%]">
+          <img src={CoffeeCup} alt="coffee-cup" className="w-full h-full rounded-md object-cover" />
+        </article>
+        <article className="text-center">
+          <h3 className="text-light-cream text-3xl font-Fraunces font-black mb-6">
+            Uncompromising quality
+          </h3>
+          <p className="text-light-cream opacity-80">
+            Although we work with growers who pay close attention to all stages
+            of harvest and processing, we employ, on our end, a rigorous quality
+            control program to avoid over-roasting or baking the coffee dry.
+            Every bag of coffee is tagged with a roast date and batch number.
+            Our goal is to roast consistent, user-friendly coffee, so that
+            brewing is easy and enjoyable.
+          </p>
+        </article>
+      </div>
+    </section>
+  );
+};
+
+export default Quality;

@@ -1,5 +1,6 @@
 import AboutHeader from "../components/AboutHeader";
 import Commitment from "../components/Commitment";
+import Quality from "../components/Quality";
 
 const About = () => {
   return (
@@ -7,6 +8,7 @@ const About = () => {
       <AboutHeader />
       <main>
         <Commitment />
+        <Quality />
       </main>
     </>
   );
