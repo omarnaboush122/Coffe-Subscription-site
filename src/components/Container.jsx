@@ -19,11 +19,17 @@ const Container = () => {
       <PlanNav />
       <div className="flex flex-col gap-20">
         <HowDoyouDrink preference={preference} setPreference={setPreference} />
-        <WhatType beanType={beanType} setBeanType={setBeanType}/>
+        <WhatType beanType={beanType} setBeanType={setBeanType} />
         <HowMuch quantity={quantity} setQuantity={setQuantity} />
         <GrindThem grindOption={grindOption} setGrindOption={setGrindOption} />
         <Deliver delivery={delivery} setDelivery={setDelivery} />
-        <OrderSummary />
+        <OrderSummary
+          preference={preference}
+          beanType={beanType}
+          quantity={quantity}
+          grindOption={grindOption}
+          delivery={delivery}
+        />
       </div>
     </div>
   );
