@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const OrderSummary = ({
   preference,
@@ -7,6 +7,7 @@ const OrderSummary = ({
   grindOption,
   delivery,
 }) => {
+  const [isAllFieldsCorrect, setIsAllFiledCorrect] = useState(false);
   const [isPlanCreated, setIsPlanCreated] = useState(false);
 
   const handleClick = () => {
@@ -14,6 +15,13 @@ const OrderSummary = ({
       setIsPlanCreated(true);
     }
   };
+
+  useEffect(() => {
+    if (preference && beanType && quantity && grindOption && delivery) {
+      setIsAllFiledCorrect(true);
+    }
+  }, [preference, beanType, quantity, grindOption, delivery]);
+
   return (
     <section className="my-32 mx-6 max-w-3xl md:mx-10 lg:my-0 lg:ml-auto">
       <div className="flex flex-col gap-14">
@@ -22,7 +30,8 @@ const OrderSummary = ({
             Order Summary
           </p>
           <div className="text-2xl text-[#fff] font-Fraunces font-black">
-            “I drink my coffee <span>as</span>{" "}
+            “I drink my coffee{" "}
+            <span>{preference == "Capsule" ? "using" : "as"}</span>{" "}
             <span className="text-dark-cyan">
               {preference == null ? "____" : preference}
             </span>
@@ -48,9 +57,9 @@ const OrderSummary = ({
         <button
           onClick={handleClick}
           className={` ${
-            isPlanCreated
+            isAllFieldsCorrect
               ? "bg-dark-cyan hover:bg-blue"
-              : "bg-grey cursor-not-allowed"
+              : "bg-grey opacity-50 cursor-not-allowed"
           } text-light-cream max-w-xs mx-auto py-4 px-8 text-lg font-Fraunces font-black rounded-lg cursor-pointer transition-colors duration-300 lg:mr-0`}
         >
           Create Your Plan
