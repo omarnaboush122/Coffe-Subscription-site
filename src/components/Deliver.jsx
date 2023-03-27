@@ -1,26 +1,90 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Arrow from "../assets/plan/desktop/icon-arrow.svg";
 
-const Deliver = ({ delivery, setDelivery }) => {
+const Deliver = ({ delivery, setDelivery, quantity }) => {
   const [data, setData] = useState([
     {
       question: "How often should we deliver?",
       answers: [
         {
           title: "Every week",
-          desc: "$7.20 per shipment. Includes free first-class shipping.",
+          desc: `$7.20 per shipment. Includes free first-class shipping.`,
         },
         {
           title: "Every 2 weeks",
-          desc: "$9.60 per shipment. Includes free priority shipping.",
+          desc: `$9.60 per shipment. Includes free priority shipping.`,
         },
         {
           title: "Every month",
-          desc: "$12.00 per shipment. Includes free priority shipping.",
+          desc: `$12.00 per shipment. Includes free priority shipping.`,
         },
       ],
     },
   ]);
+
+  useEffect(() => {
+    if (quantity === "250g") {
+      setData([
+        {
+          question: "How often should we deliver?",
+          answers: [
+            {
+              title: "Every week",
+              desc: `$7.20 per shipment. Includes free first-class shipping.`,
+            },
+            {
+              title: "Every 2 weeks",
+              desc: `$9.60 per shipment. Includes free priority shipping.`,
+            },
+            {
+              title: "Every month",
+              desc: `$12.00 per shipment. Includes free priority shipping.`,
+            },
+          ],
+        },
+      ]);
+    } else if (quantity === "500g") {
+      setData([
+        {
+          question: "How often should we deliver?",
+          answers: [
+            {
+              title: "Every week",
+              desc: `$13.00 per shipment. Includes free first-class shipping.`,
+            },
+            {
+              title: "Every 2 weeks",
+              desc: `$17.50 per shipment. Includes free priority shipping.`,
+            },
+            {
+              title: "Every month",
+              desc: `$22.00 per shipment. Includes free priority shipping.`,
+            },
+          ],
+        },
+      ]);
+    } else {
+      setData([
+        {
+          question: "How often should we deliver?",
+          answers: [
+            {
+              title: "Every week",
+              desc: `$22.00 per shipment. Includes free first-class shipping.`,
+            },
+            {
+              title: "Every 2 weeks",
+              desc: `$32.00 per shipment. Includes free priority shipping.`,
+            },
+            {
+              title: "Every month",
+              desc: `$42.00 per shipment. Includes free priority shipping.`,
+            },
+          ],
+        },
+      ]);
+    }
+  }, [quantity]);
 
   const [isVisible, setIsVisible] = useState(false);
 

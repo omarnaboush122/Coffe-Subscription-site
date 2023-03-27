@@ -42,6 +42,7 @@ const OrderSummary = ({
             quantity={quantity}
             grindOption={grindOption}
             delivery={delivery}
+            setIsPlanCreated={setIsPlanCreated}
           />
         )}
         <article className="bg-black px-6 py-8 rounded-lg">

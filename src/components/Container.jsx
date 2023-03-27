@@ -26,7 +26,7 @@ const Container = () => {
           setGrindOption={setGrindOption}
           preference={preference}
         />
-        <Deliver delivery={delivery} setDelivery={setDelivery} />
+        <Deliver delivery={delivery} setDelivery={setDelivery} quantity={quantity} />
         <OrderSummary
           preference={preference}
           beanType={beanType}
