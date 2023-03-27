@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Checkout from "./Checkout";
 
 const OrderSummary = ({
   preference,
@@ -11,7 +12,7 @@ const OrderSummary = ({
   const [isPlanCreated, setIsPlanCreated] = useState(false);
 
   const handleClick = () => {
-    if (preference && beanType && quantity && grindOption && delivery) {
+    if (isAllFieldsCorrect) {
       setIsPlanCreated(true);
     }
   };
@@ -23,8 +24,17 @@ const OrderSummary = ({
   }, [preference, beanType, quantity, grindOption, delivery]);
 
   return (
-    <section className="my-32 mx-6 max-w-3xl md:mx-10 lg:my-0 lg:ml-auto">
+    <section className="relative my-32 mx-6 max-w-3xl md:mx-10 lg:my-0 lg:ml-auto">
       <div className="flex flex-col gap-14">
+        {isPlanCreated && (
+          <Checkout
+            preference={preference}
+            beanType={beanType}
+            quantity={quantity}
+            grindOption={grindOption}
+            delivery={delivery}
+          />
+        )}
         <article className="bg-black px-6 py-8 rounded-lg">
           <p className="text-[#fff] opacity-50 capitalize mb-2">
             Order Summary
