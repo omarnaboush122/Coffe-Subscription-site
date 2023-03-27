@@ -2,6 +2,7 @@ import Deliver from "./Deliver";
 import GrindThem from "./GrindThem";
 import HowDoyouDrink from "./HowDoyouDrink";
 import HowMuch from "./HowMuch";
+import OrderSummary from "./OrderSummary";
 import PlanNav from "./PlanNav";
 import WhatType from "./WhatType";
 
@@ -15,6 +16,7 @@ const Container = () => {
         <HowMuch />
         <GrindThem />
         <Deliver />
+        <OrderSummary />
       </div>
     </div>
   );
