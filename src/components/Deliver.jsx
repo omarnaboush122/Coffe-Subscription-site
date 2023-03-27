@@ -22,7 +22,7 @@ const Deliver = ({ delivery, setDelivery }) => {
     },
   ]);
 
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
     setIsVisible((prevVisible) => !prevVisible);

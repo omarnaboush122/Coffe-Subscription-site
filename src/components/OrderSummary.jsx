@@ -18,8 +18,14 @@ const OrderSummary = ({
   };
 
   useEffect(() => {
-    if (preference && beanType && quantity && grindOption && delivery) {
-      setIsAllFiledCorrect(true);
+    if (preference === "Capsule") {
+      if (preference && beanType && quantity && delivery) {
+        setIsAllFiledCorrect(true);
+      }
+    } else {
+      if (preference && beanType && quantity && grindOption && delivery) {
+        setIsAllFiledCorrect(true);
+      }
     }
   }, [preference, beanType, quantity, grindOption, delivery]);
 
@@ -56,10 +62,14 @@ const OrderSummary = ({
             <span className="text-dark-cyan">
               {quantity ? quantity : "____"}
             </span>{" "}
-            ground ala{" "}
-            <span className="text-dark-cyan">
-              {grindOption ? grindOption : "____"}
-            </span>
+            {preference !== "Capsule" && (
+              <>
+                ground ala{" "}
+                <span className="text-dark-cyan">
+                  {grindOption ? grindOption : "____"}
+                </span>
+              </>
+            )}
             , sent to me{" "}
             <span className="text-dark-cyan">
               {delivery ? delivery : "____"}
@@ -71,9 +81,9 @@ const OrderSummary = ({
           onClick={handleClick}
           className={` ${
             isAllFieldsCorrect
-              ? "bg-dark-cyan hover:bg-blue"
+              ? "bg-dark-cyan cursor-pointer hover:bg-blue"
               : "bg-grey opacity-50 cursor-not-allowed"
-          } text-light-cream max-w-xs mx-auto py-4 px-8 text-lg font-Fraunces font-black rounded-lg cursor-pointer transition-colors duration-300 lg:mr-0`}
+          } text-light-cream max-w-xs mx-auto py-4 px-8 text-lg font-Fraunces font-black rounded-lg transition-colors duration-300 lg:mr-0`}
         >
           Create Your Plan
         </button>

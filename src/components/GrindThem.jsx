@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Arrow from "../assets/plan/desktop/icon-arrow.svg";
 
-const GrindThem = ({grindOption,setGrindOption}) => {
+const GrindThem = ({ grindOption, setGrindOption, preference }) => {
   const [data, setData] = useState([
     {
       question: "Want us to grind them?",
@@ -22,10 +22,12 @@ const GrindThem = ({grindOption,setGrindOption}) => {
     },
   ]);
 
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
-    setIsVisible((prevVisible) => !prevVisible);
+    setIsVisible((prevVisible) => {
+      preference === "Capsule" ? prevVisible == false : !prevVisible;
+    });
   };
 
   return (
