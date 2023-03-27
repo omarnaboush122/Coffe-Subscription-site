@@ -6,7 +6,7 @@ const Checkout = ({
   delivery,
 }) => {
   return (
-    <div className="fixed top-[50%] left-[50%] z-20 bg-light-cream rounded-lg w-[clamp(100px,95%,500px)] shadow-md -translate-x-[50%] -translate-y-[50%] overflow-hidden">
+    <div className="fixed top-[50%] left-[50%] z-20 bg-light-cream rounded-lg w-[clamp(100px,95%,500px)] shadow-lg -translate-x-[50%] -translate-y-[50%] overflow-hidden">
       <div className="bg-dark-grey-blue p-6">
         <h3 className="text-3xl text-[#fff] font-Fraunces font-black">Order Summary</h3>
       </div>
