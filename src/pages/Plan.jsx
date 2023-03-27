@@ -1,5 +1,5 @@
 import PlanHeader from "../components/PlanHeader";
-import Questions from "../components/Questions";
+import Container from "../components/Container";
 import Steps from "../components/Steps";
 
 const Plan = () => {
@@ -8,7 +8,7 @@ const Plan = () => {
       <PlanHeader />
       <main>
         <Steps />
-        <Questions />
+        <Container />
       </main>
     </>
   );

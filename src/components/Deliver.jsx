@@ -25,7 +25,7 @@ const Deliver = () => {
   const [answer, setAnswer] = useState(null);
 
   return (
-    <section className="mx-6 md:mx-10">
+    <section id="deliveries" className="mx-6 md:mx-10">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <h1 className="text-grey text-2xl font-Fraunces font-black md:text-3xl lg:text-4xl">
