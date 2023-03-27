@@ -25,6 +25,9 @@ const OrderSummary = ({
 
   return (
     <section className="relative my-32 mx-6 max-w-3xl md:mx-10 lg:my-0 lg:ml-auto">
+      {isPlanCreated && (
+        <div className="fixed top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.4)] z-10"></div>
+      )}
       <div className="flex flex-col gap-14">
         {isPlanCreated && (
           <Checkout
@@ -41,25 +44,25 @@ const OrderSummary = ({
           </p>
           <div className="text-2xl text-[#fff] font-Fraunces font-black">
             “I drink my coffee{" "}
-            <span>{preference == "Capsule" ? "using" : "as"}</span>{" "}
+            <span>{preference === "Capsule" ? "using" : "as"}</span>{" "}
             <span className="text-dark-cyan">
-              {preference == null ? "____" : preference}
+              {preference ? preference : "____"}
             </span>
             , with a{" "}
             <span className="text-dark-cyan">
-              {beanType == null ? "____" : beanType}
+              {beanType ? beanType : "____"}
             </span>{" "}
             type of bean.{" "}
             <span className="text-dark-cyan">
-              {quantity == null ? "____" : quantity}
+              {quantity ? quantity : "____"}
             </span>{" "}
             ground ala{" "}
             <span className="text-dark-cyan">
-              {grindOption == null ? "____" : grindOption}
+              {grindOption ? grindOption : "____"}
             </span>
             , sent to me{" "}
             <span className="text-dark-cyan">
-              {delivery == null ? "____" : delivery}
+              {delivery ? delivery : "____"}
             </span>
             .”
           </div>
