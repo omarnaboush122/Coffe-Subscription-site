@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Arrow from "../assets/plan/desktop/icon-arrow.svg";
 
-const GrindThem = () => {
+const GrindThem = ({grindOption,setGrindOption}) => {
   const [data, setData] = useState([
     {
       question: "Want us to grind them?",
@@ -23,7 +23,6 @@ const GrindThem = () => {
   ]);
 
   const [isVisible, setIsVisible] = useState(true);
-  const [answer, setAnswer] = useState(null);
 
   const toggleVisibility = () => {
     setIsVisible((prevVisible) => !prevVisible);
@@ -48,9 +47,9 @@ const GrindThem = () => {
             {data[0].answers.map((item, i) => (
               <article
                 key={i}
-                onClick={() => setAnswer(item.title)}
+                onClick={() => setGrindOption(item.title)}
                 className={`${
-                  answer === item.title
+                  grindOption === item.title
                     ? "bg-dark-cyan text-light-cream"
                     : "bg-[#F4F1EB] text-dark-grey-blue hover:bg-pale-orange"
                 } rounded-lg flex flex-col gap-2 max-w-[350px] mx-auto p-6 cursor-pointer transition-colors duration-300 md:gap-6 md:py-10`}

@@ -2,7 +2,7 @@
 
 const PlanNav = () => {
   return (
-    <ul className="hidden lg:flex flex-col gap-6">
+    <ul className="hidden lg:flex flex-col gap-6 flex-1">
     <li className="w-60 pb-6 opacity-50 border-b border-solid border-grey">
       <span className="text-2xl text-dark-cyan font-Fraunces font-black mr-7 hover:opacity-100 transition-opacity duration-300">
         01

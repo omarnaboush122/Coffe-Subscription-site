@@ -1,6 +1,6 @@
 const OrderSummary = () => {
   return (
-    <section className="my-32 mx-6 md:mx-10 lg:my-20">
+    <section className="my-32 mx-6 max-w-3xl md:mx-10 lg:my-0 lg:ml-auto">
       <div className="flex flex-col gap-14">
         <article className="bg-black px-6 py-8 rounded-lg">
           <p className="text-[#fff] opacity-50 capitalize mb-2">
