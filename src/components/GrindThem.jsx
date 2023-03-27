@@ -25,9 +25,9 @@ const GrindThem = ({ grindOption, setGrindOption, preference }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
-    setIsVisible((prevVisible) => {
-      preference === "Capsule" ? prevVisible == false : !prevVisible;
-    });
+    if (preference !== "Capsule") {
+      setIsVisible(!isVisible);
+    }
   };
 
   return (

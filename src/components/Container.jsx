@@ -20,8 +20,12 @@ const Container = () => {
       <div className="flex flex-col gap-20">
         <HowDoyouDrink preference={preference} setPreference={setPreference} />
         <WhatType beanType={beanType} setBeanType={setBeanType} />
-        <HowMuch quantity={quantity} setQuantity={setQuantity} preference={preference} />
-        <GrindThem grindOption={grindOption} setGrindOption={setGrindOption} />
+        <HowMuch quantity={quantity} setQuantity={setQuantity} />
+        <GrindThem
+          grindOption={grindOption}
+          setGrindOption={setGrindOption}
+          preference={preference}
+        />
         <Deliver delivery={delivery} setDelivery={setDelivery} />
         <OrderSummary
           preference={preference}
