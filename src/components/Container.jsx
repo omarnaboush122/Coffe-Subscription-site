@@ -9,7 +9,7 @@ const Container = () => {
   return (
     <div className="my-32 md:mx-10 lg:flex lg:gap-20 lg:mx-20">
       <PlanNav />
-      <div className="flex flex-col gap-20">
+      <div className="flex flex-col gap-20 flex-1">
         <HowDoyouDrink />
         <WhatType />
         <HowMuch />
