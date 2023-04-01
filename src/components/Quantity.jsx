@@ -1,22 +1,22 @@
 import { useState } from "react";
 import Arrow from "../assets/plan/desktop/icon-arrow.svg";
 
-const HowDoyouDrink = ({ preference, setPreference }) => {
+const Quantity = ({quantity,setQuantity}) => {
   const [data, setData] = useState([
     {
-      question: "How do you drink your coffee?",
+      question: "How much would you like?",
       answers: [
         {
-          title: "Capsule",
-          desc: "Compatible with Nespresso systems and similar brewers",
+          title: "250g",
+          desc: "Perfect for the solo drinker. Yields about 12 delicious cups.",
         },
         {
-          title: "Filter",
-          desc: "For pour over or drip methods like Aeropress, Chemex, and V60",
+          title: "500g",
+          desc: "Perfect option for a couple. Yields about 40 delectable cups.",
         },
         {
-          title: "Espresso",
-          desc: "Dense and finely ground beans for an intense, flavorful experience",
+          title: "1000g",
+          desc: "Perfect for offices and events. Yields about 90 delightful cups.",
         },
       ],
     },
@@ -29,7 +29,7 @@ const HowDoyouDrink = ({ preference, setPreference }) => {
   };
 
   return (
-    <section id="preferences" className="mx-6 md:mx-10">
+    <section id="quantity" className="mx-6 md:mx-10">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <h1 className="text-grey text-2xl font-Fraunces font-black md:text-3xl lg:text-4xl">
@@ -47,9 +47,9 @@ const HowDoyouDrink = ({ preference, setPreference }) => {
             {data[0].answers.map((item, i) => (
               <article
                 key={i}
-                onClick={() => setPreference(item.title)}
+                onClick={() => setQuantity(item.title)}
                 className={`${
-                  preference === item.title
+                  quantity === item.title
                     ? "bg-dark-cyan text-light-cream"
                     : "bg-[#F4F1EB] text-dark-grey-blue hover:bg-pale-orange"
                 } rounded-lg flex flex-col gap-2 max-w-[350px] mx-auto p-6 cursor-pointer transition-colors duration-300 md:gap-6 md:py-10`}
@@ -67,4 +67,4 @@ const HowDoyouDrink = ({ preference, setPreference }) => {
   );
 };
 
-export default HowDoyouDrink;
+export default Quantity;

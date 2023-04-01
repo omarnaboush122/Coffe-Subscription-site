@@ -1,22 +1,22 @@
 import { useState } from "react";
 import Arrow from "../assets/plan/desktop/icon-arrow.svg";
 
-const HowMuch = ({quantity,setQuantity}) => {
+const Preference = ({ preference, setPreference }) => {
   const [data, setData] = useState([
     {
-      question: "How much would you like?",
+      question: "How do you drink your coffee?",
       answers: [
         {
-          title: "250g",
-          desc: "Perfect for the solo drinker. Yields about 12 delicious cups.",
+          title: "Capsule",
+          desc: "Compatible with Nespresso systems and similar brewers",
         },
         {
-          title: "500g",
-          desc: "Perfect option for a couple. Yields about 40 delectable cups.",
+          title: "Filter",
+          desc: "For pour over or drip methods like Aeropress, Chemex, and V60",
         },
         {
-          title: "1000g",
-          desc: "Perfect for offices and events. Yields about 90 delightful cups.",
+          title: "Espresso",
+          desc: "Dense and finely ground beans for an intense, flavorful experience",
         },
       ],
     },
@@ -29,7 +29,7 @@ const HowMuch = ({quantity,setQuantity}) => {
   };
 
   return (
-    <section id="quantity" className="mx-6 md:mx-10">
+    <section id="preferences" className="mx-6 md:mx-10">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <h1 className="text-grey text-2xl font-Fraunces font-black md:text-3xl lg:text-4xl">
@@ -47,9 +47,9 @@ const HowMuch = ({quantity,setQuantity}) => {
             {data[0].answers.map((item, i) => (
               <article
                 key={i}
-                onClick={() => setQuantity(item.title)}
+                onClick={() => setPreference(item.title)}
                 className={`${
-                  quantity === item.title
+                  preference === item.title
                     ? "bg-dark-cyan text-light-cream"
                     : "bg-[#F4F1EB] text-dark-grey-blue hover:bg-pale-orange"
                 } rounded-lg flex flex-col gap-2 max-w-[350px] mx-auto p-6 cursor-pointer transition-colors duration-300 md:gap-6 md:py-10`}
@@ -67,4 +67,4 @@ const HowMuch = ({quantity,setQuantity}) => {
   );
 };
 
-export default HowMuch;
+export default Preference;

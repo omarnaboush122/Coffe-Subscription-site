@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Arrow from "../assets/plan/desktop/icon-arrow.svg";
 
-const WhatType = ({beanType,setBeanType}) => {
+const Type = ({beanType,setBeanType}) => {
   const [data, setData] = useState([
     {
       question: "What type of coffee?",
@@ -67,4 +67,4 @@ const WhatType = ({beanType,setBeanType}) => {
   );
 };
 
-export default WhatType;
+export default Type;

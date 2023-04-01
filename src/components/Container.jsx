@@ -1,12 +1,12 @@
-import { useContext, useState } from "react";
-import Deliver from "./Deliver";
-import GrindThem from "./GrindThem";
-import HowDoyouDrink from "./HowDoyouDrink";
-import HowMuch from "./HowMuch";
+import { useContext } from "react";
+import { Context } from "../Context";
 import OrderSummary from "./OrderSummary";
 import PlanNav from "./PlanNav";
-import WhatType from "./WhatType";
-import { Context } from "../Context";
+import Preference from "./Preference";
+import Type from "./Type";
+import Quantity from "./Quantity";
+import Deliver from "./Deliver";
+import GrindThem from "./GrindThem";
 
 const Container = () => {
   const { orderDetails, setOrderDetails } = useContext(Context);
@@ -29,9 +29,9 @@ const Container = () => {
     <div className="my-32 md:mx-10 lg:flex lg:gap-20 lg:mx-20">
       <PlanNav />
       <div className="flex flex-col gap-20">
-        <HowDoyouDrink preference={preference} setPreference={setPreference} />
-        <WhatType beanType={beanType} setBeanType={setBeanType} />
-        <HowMuch quantity={quantity} setQuantity={setQuantity} />
+        <Preference preference={preference} setPreference={setPreference} />
+        <Type beanType={beanType} setBeanType={setBeanType} />
+        <Quantity quantity={quantity} setQuantity={setQuantity} />
         <GrindThem
           grindOption={grindOption}
           setGrindOption={setGrindOption}
